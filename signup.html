@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | SmartCanteen</title>
+    <link rel="stylesheet" href="css/signup_style.css">
+</head>
+<body background="images/hero-bg.jpg">
+    <div class="container">
+        <div class="login-section">
+            <h2>SIGN UP</h2>
+            <form action="php/login.html" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="reg_no" placeholder="Reg No" pattern="\d{7}" maxlength="7" minlength="7" inputmode="numeric" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" minlength="8" required>
+                <button class="login_button" type="submit" name="submit">Sign Up</button>
+
+                <p style="margin-left: 20%;">Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </div>
+        <div class="image-section">
+            <!-- Image Section -->
+        </div>
+    </div>
+</body>
+</html>

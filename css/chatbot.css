@@ -1,0 +1,219 @@
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+}
+
+#chatbox {
+    width: 320px;
+    height: 400px; /* Increased height to include the 'ask something' block */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #ffffff;
+    opacity: 90%;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    justify-content: space-between;
+    animation: bounceIn 0.7s ease-out both; /* Bounce-in animation */
+    z-index: 1000;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(100%) scale(0.5); /* Start off-screen and small */
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-20px) scale(1.05); /* Bounce upwards and slightly overscale */
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(10px) scale(0.95); /* Bounce downwards slightly */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Final settled position */
+    }
+}
+
+
+#messages {
+    height: 250px; /* Increased height to allow for more messages */
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    scrollbar-width: thin;
+}
+.botMessage, .userMessage {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    max-width: 80%;
+    text-align: left;
+    width: auto;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 2;
+}
+.botMessage {
+    font-size: 12px;
+    color: #f1f1f1;
+    background-color: #5252f2;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    text-size-adjust: 5px;
+}
+.userMessage {
+    background-color: #f66f5b;
+    color: #ffffff;
+    text-align: right;
+    margin-left: auto;
+    font-size: 12px;
+    width: fit-content;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.buttonContainer {
+    display: flex;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.questionButton {
+    padding: 6px 12px; /* Adjust padding for better fit */
+    background-color: #e0f7fa;
+    border: 1px solid #072bbe;
+    border-radius: 20px; /* Rounded bubble style */
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 12px; /* Font size */
+    color: #5252f2;
+    width: auto; /* Width adjusts with text length */
+    min-width: 80px; /* Minimum width to maintain button size */
+    max-width: 200px; /* Optional maximum width for large text */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.questionButton:hover {
+    background-color: #072bbe;
+    color: white;
+    border-color: #072bbe;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15);
+}
+       
+#userInput {
+    width: 85%;
+    height: 10%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#userInput:focus {
+    border-color: #072bbe;
+    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.2);
+}
+#sendButton {
+    width: 20%;
+    height: 9%;
+    border: none;
+    font-size: 12px;
+    background-color: #072bbe;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#sendButton:hover {
+    background-color: #02114c;
+}
+
+
+
+#toggleChatButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #072bbe;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+#toggleChatButton:hover {
+    background-color: #008ba3;
+    animation: wiggleZoom 0.5s ease both;
+}
+
+#toggleChatButton:active {
+    background-color: #00695c; /* Darker color on click */
+    animation: zoomIn 0.4s ease both;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Wiggle and Zoom effect on hover */
+@keyframes wiggleZoom {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(10deg) scale(1.05);
+    }
+    50% {
+        transform: rotate(-10deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(10deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* Zoom in effect on click */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Customize scrollbar for messages */
+#messages::-webkit-scrollbar {
+    width: px;
+}
+#messages::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+#messages::-webkit-scrollbar-track {
+    background: transparent;
+}

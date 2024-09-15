@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Beverages | SURF&TURF</title>
+
+    <!-- Favicon -->
+  <link rel="icon" href="images/Cafe_menu.png" type="image/x-icon" />
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- slidck slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css.map" integrity="undefined" crossorigin="anonymous" />
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="MainPage.php">
+            <span>
+              SURF & TURF
+            </span>
+          </a>
+          <div class="" id="">
+            <div class="User_option">
+              <a href="">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <!-- <span style="font-size: large; padding-right: 20px"><?php echo htmlspecialchars($username); ?></span> -->
+              </a>
+              <!-- <form class="form-inline ">
+                <input type="search" placeholder="Search" />
+                <button class="btn  nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form> -->
+              <a href="cart.php" class="cart-button">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>Cart</span>
+              </a>
+            </div>
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <img src="images/menu.png" alt="">
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="MainPage.php">Home</a>
+                <a href="about.html">About</a>
+                <a href="dashboard.php">Dashboard</a>
+                <a href="logout.php">Logout</a>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="detail-box">
+              <h1>
+                <strong>Beverages</strong>
+              </h1>
+              <p>
+                "Where every sip brings a smile!"
+              </p>
+            </div>
+            <!-- <div class="find_container ">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <form>
+                      <div class="form-row ">
+                        <div class="form-group col-lg-5">
+                          <input type="text" class="form-control" id="inputHotel" placeholder="Restaurant Name">
+                        </div>
+                        <div class="form-group col-lg-3">
+                          <input type="text" class="form-control" id="inputLocation" placeholder="All Locations">
+                          <span class="location_icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        <div class="form-group col-lg-3">
+                          <div class="btn-box">
+                            <button type="submit" class="btn ">Search</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="slider_container">
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img1.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img2.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img3.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img4.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img1.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img2.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img3.png" alt="" />
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-box">
+            <img src="images/slider-img4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- recipe section -->
+
+  <section class="recipe_section layout_padding-top">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Best Popular Recipes
+        </h2>
+      </div>
+      <br>
+      <div class="heading_container heading_center">
+        <h2>
+          Hot Beverages
+        </h2>
+      </div>
+      <br>
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/coffee.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">coffee</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish1" data-name="coffee" data-price="15"
+                onclick="addToCart('coffee', 15)">
+                &#8377; 15 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/tea.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Tea</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish2" data-name="Tea" data-price="15"
+                onclick="addToCart('Tea', 15)">
+                &#8377; 15 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/lemon tea.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Lemon Tea</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish3" data-name="Lemon Tea" data-price="15"
+                onclick="addToCart('Lemon Tea', 15)">
+                &#8377; 15 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/boost.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Boost</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish4" data-name="Boost" data-price="20"
+                onclick="addToCart('Boost', 20)">
+                &#8377; 20 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/boost.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Horlicks</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish5" data-name="Horlicks" data-price="20"
+                onclick="addToCart('Horlicks', 20)">
+                &#8377; 20 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+    </div>
+    <br>
+      <div class="heading_container heading_center">
+        <h2>
+          Cold Beverages
+        </h2>
+      </div>
+      <br>
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/horlicks cold.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Cold Boost</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish6" data-name="Cold Boost" data-price="45"
+                onclick="addToCart('Cold Boost', 45)">
+                &#8377; 45 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/cold horlicks.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Cold Horlicks</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish7" data-name="Cold Horlicks" data-price="45"
+                onclick="addToCart('Cold Horlicks', 45)">
+                &#8377; 45 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/oreo.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Oreo Shake</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish8" data-name="Oreo Shake" data-price="65"
+                onclick="addToCart('Oreo Shake', 65)">
+                &#8377; 65 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/cold choc.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Cold Chocolate</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish9" data-name="Cold Chocolate" data-price="40"
+                onclick="addToCart('Cold Chocolate', 40)">
+                &#8377; 40 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/oreo with ice.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Oreo Shake with Ice cream</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish10" data-name="Oreo Shake with Ice cream" data-price="75"
+                onclick="addToCart('Oreo Shake with Ice cream', 75)">
+                &#8377; 75 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+    </div>
+    <br>
+      <div class="heading_container heading_center">
+        <h2>
+          Juice corner
+        </h2>
+      </div>
+      <br>
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/grapes.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Grape Juice</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish11" data-name="Grape Juice" data-price="50"
+                onclick="addToCart('Grape Juice', 50)">
+                &#8377; 50 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/watermelon.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">WaterMelon Juice</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish12" data-name="WaterMelon Juice" data-price="50"
+                onclick="addToCart('WaterMelon Juice', 50)">
+                &#8377; 50 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/orange.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Orange Juice</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish13" data-name="Orange Juice" data-price="50"
+                onclick="addToCart('Orange Juice', 50)">
+                &#8377; 50 <br> Add to cart &raquo;
+              </button>
+            </p>
+          </div><!-- /.col-lg-4 --></center>
+
+          <div class="col-lg-4"><center>
+            <img class="img-circle" style="width: 65%; height: 65%; padding-top: 10%;" src="images/mango.jpeg" alt="Generic placeholder image">
+            <h2 style="padding-top: 6%;">Mango Juice</h2>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> -->
+            <p>
+              <button class="btn btn-default add-to-cart" data-id="dish14" data-name="Mango Juice" data-price="50"
+                onclick="addToCart('Mango Juice', 50)">
+                &#8377; 50 <br> Add to cart &raquo;
+              </button>
+            </p>
+                    
+          </div><!-- /.col-lg-4 --></center>
+          
+          <!-- <div class="col-lg-4">
+            <img class="img-circle" src="" alt="Generic placeholder image">
+            <h2>Cold Machoccino</h2>
+             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> 
+            <p><a class="btn btn-default" href="#" role="button">&#8377; 40 <br>Add to cart &raquo;</a></p>
+          </div>/.col-lg-4 -->
+         
+    </div>
+    <br>
+      <div class="btn-box">
+        <a href="">
+          Order Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end recipe section -->
+
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="col-md-11 col-lg-10 mx-auto">
+        <div class="heading_container heading_center">
+          <h2>
+            About Us
+          </h2>
+        </div>
+        <div class="box">
+          <div class="col-md-7 mx-auto">
+            <div class="img-box">
+              <img src="images/about-img.jpg" class="box-img" alt="">
+            </div>
+          </div>
+          <div class="detail-box">
+            <p>
+              SmartCanteen operates within the domains of Education and E-commerce, enhancing the food ordering experience in educational institutions. By leveraging e-commerce
+              functionalities, the app provides a seamless online ordering process tailored to meet the specific needs of students and faculty, ensuring convenience and efficiency in campus
+              life.SmartCanteen is meticulously crafted to cater specifically to the needs of educational institutions, with a primary focus on enhancing the food ordering experience for
+              students within college campuses. The application encompasses a comprehensive range
+              of functionalities designed to streamline every aspect of the canteen dining process.
+              Central to its design is robust user authentication, ensuring secure access through
+              college-provided email IDs, which not only safeguards sensitive information but also
+              ensures exclusive access for verified users. Students will benefit from a user-friendly
+              interface that allows them to browse through a curated list of canteen restaurants, each
+              offering a diverse selection of meals and beverages. The platform enables seamless
+              order placement, empowering students to customize their orders and make informed
+              choices directly from their devices. Integration of secure online payment options further
+              enhances convenience, allowing for hassle-free transactions without the need for
+              physical currency.</p>
+            <a href="">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- news section -->
+
+  <!-- <section class="news_section">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Latest News
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/n1.jpg" class="box-img" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Tasty Food For you
+              </h4>
+              <p>
+                there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+              </p>
+              <a href="">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/n2.jpg" class="box-img" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Breakfast For you
+              </h4>
+              <p>
+                there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+              </p>
+              <a href="">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end news section -->
+
+  <!-- client section -->
+
+  <!-- <section class="client_section layout_padding">
+    <div class="container">
+      <div class="col-md-11 col-lg-10 mx-auto">
+        <div class="heading_container heading_center">
+          <h2>
+            Testimonial
+          </h2>
+        </div>
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="detail-box">
+                <h4>
+                  Virginia
+                </h4>
+                <p>
+                  Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                </p>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="detail-box">
+                <h4>
+                  Virginia
+                </h4>
+                <p>
+                  Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                </p>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="detail-box">
+                <h4>
+                  Virginia
+                </h4>
+                <p>
+                  Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                </p>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev d-none" href="#customCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end client section -->
+
+  <div class="footer_container">
+    <!-- info section -->
+    <section class="info_section ">
+      <div class="container">
+        <div class="contact_box">
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="info_links">
+          <ul>
+            <li class="active">
+              <a href="MainPage.php">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+            <li>
+              <a class="" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <!-- <li>
+              <a class="" href="testimonial.html">
+                Testimonial
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="social_box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end info_section -->
+
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a><br>
+          Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+  </div>
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- slick  slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+  <script>
+    function addToCart(dishName, price) {
+      const shopName = "SurfNTurf"; // Specify the shop name for this dish
+
+      fetch('add_to_cart.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'name': dishName,
+          'price': price,
+          'quantity': 1, // or whatever quantity you want to default to
+          'shop_name': shopName // Include the shop name
+        })
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === 'success') {
+            showAlert(`Item '${dishName}' added to cart successfully!`);
+            updateCartDisplay(data.cart); // Update the cart display if needed
+          } else {
+            showAlert(`Error: ${data.message}`);
+          }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function showAlert(message) {
+      alert(message); // Simple alert for demonstration
+    }
+
+    function updateCartDisplay(cart) {
+      // Implement your cart display update logic here
+      console.log('Cart updated:', cart);
+    }
+  </script>
+
+
+</body>
+
+</html>

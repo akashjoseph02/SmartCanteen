@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 175%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quote{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: small;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+}
+
+.login-section, .image-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+.login-section input[type="email"],
+.login-section input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.login-section button {
+    padding: 10px;
+    background-color: #009688;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.login-section button:hover {
+    background-color: #00796b;
+}
+
+.login-section .google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.login_button {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    
+}
+
+.login-section .google-signin img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.login-section a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+.image-section .caption {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    width: 100%;
+}
+
+.p2 {
+    font-size: 13px;
+    padding-left: 5%;
+    margin-top: 0%;
+}
